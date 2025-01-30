@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>notes_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Notes List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	//create an array to populate with notes
+	data.notes = [];
+	var noteGR = new GlideRecord('x_snc_createnotes_note');
+	noteGR.addQuery('user', gs.getUser().getID());
+	noteGR.orderByDesc('sys_created_on');
+	noteGR.query();
+	while (noteGR.next()) {
+		var noteObj = {};
+		//use service portal helper method to get some display values
+		$sp.getRecordDisplayValues(noteObj, noteGR, 'number,title,sys_id');
+		//get the first 20 characters of the description
+		noteObj.note = noteGR.getValue('note').slice(0,20);
+		//push the populated obj into the array
+		data.notes.push(noteObj);
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 09:05:39</sys_created_on>
+        <sys_id>8fb89af88393d21045ad1cb6feaad3b4</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Notes List</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_update_name>sp_widget_8fb89af88393d21045ad1cb6feaad3b4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 11:35:27</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title pull-left">
+      ${Notes}
+    </h3>
+  </div>
+  <div class="panel-body">
+    <p>
+      Notes list widget
+    </p>
+  </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</application>
+        <file_path/>
+        <instance_id>8a9f0ab61b75fd9052a243f4bd4bcb55</instance_id>
+        <instance_name>dev185211</instance_name>
+        <name>sp_widget_8fb89af88393d21045ad1cb6feaad3b4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;notes_list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Notes List&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+	//create an array to populate with notes
+	data.notes = [];
+	var noteGR = new GlideRecord('x_snc_createnotes_note');
+	noteGR.addQuery('user', gs.getUser().getID());
+	noteGR.orderByDesc('sys_created_on');
+	noteGR.query();
+	while (noteGR.next()) {
+		var noteObj = {};
+		//use service portal helper method to get some display values
+		$sp.getRecordDisplayValues(noteObj, noteGR, 'number,title,sys_id');
+		//get the first 20 characters of the description
+		noteObj.note = noteGR.getValue('note').slice(0,20);
+		//push the populated obj into the array
+		data.notes.push(noteObj);
+	}
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-22 09:05:39&lt;/sys_created_on&gt;&lt;sys_id&gt;8fb89af88393d21045ad1cb6feaad3b4&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Notes List&lt;/sys_name&gt;&lt;sys_package display_value="CreateNotes" source="x_snc_createnotes"&gt;df5fd9a5090232007f44e1046c8ff69f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CreateNotes"&gt;df5fd9a5090232007f44e1046c8ff69f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_8fb89af88393d21045ad1cb6feaad3b4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-22 11:35:27&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="panel panel-default"&gt;
+  &lt;div class="panel-heading clearfix"&gt;
+    &lt;h3 class="panel-title pull-left"&gt;
+      ${Notes}
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;p&gt;
+      Notes list widget
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1273944531</payload_hash>
+        <record_name>Notes List</record_name>
+        <reverted_from/>
+        <source>d755a5f4839f921045ad1cb6feaad31e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 11:35:27</sys_created_on>
+        <sys_id>e10b7a748357d21045ad1cb6feaad34a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948dcbbe560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 11:35:27</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>690b7a745457d210078414dc2c459f49</update_guid>
+        <update_guid_history>690b7a745457d210078414dc2c459f49:1273944531,6ad57afc4417d210f39be326e2ea43c3:3046103,4462b23c0117d210ca1439b52af89a5c:-1778098777,5812b6f84717d21066bc93e1a2184116:1976174367,6abed230acd3d2102ee764cf2efd5691:-1778098777,c1b9563c6093d2109217f4f11d5dddff:-1364651464,3119d6f85193d2100a3a4f42f2ed64cf:773127017,03b89af85f93d2105da602765faf7ab8:2136736001</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Notes List">45bbf2f48357d21045ad1cb6feaad367</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 11:38:26</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>2a5b8fd5ec284f00b0b4f5f8b23a9000</sys_id>
+        <sys_metadata>8fb89af88393d21045ad1cb6feaad3b4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notes List</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_scope_delete display_value="">64daa03572704d49a928bf08a985d6f9</sys_scope_delete>
+        <sys_update_name>sp_widget_8fb89af88393d21045ad1cb6feaad3b4</sys_update_name>
+        <sys_update_version display_value="sp_widget_8fb89af88393d21045ad1cb6feaad3b4">e10b7a748357d21045ad1cb6feaad34a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 11:38:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

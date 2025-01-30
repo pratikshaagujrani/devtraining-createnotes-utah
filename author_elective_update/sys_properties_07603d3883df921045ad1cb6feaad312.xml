@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="DELETE">
+        <choices/>
+        <description>If true, portal css would be in rem units</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>glide.service_portal.resize_text.https://.service-now.com/CreateNotes.enable_rem_conversion</name>
+        <read_roles/>
+        <suffix/>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 06:09:31</sys_created_on>
+        <sys_id>07603d3883df921045ad1cb6feaad312</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>glide.service_portal.resize_text.https://.service-now.com/CreateNotes.enable_rem_conversion</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_update_name>sys_properties_07603d3883df921045ad1cb6feaad312</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 06:12:18</sys_updated_on>
+        <type>boolean</type>
+        <value>true</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="DELETE" query="documentkey=07603d3883df921045ad1cb6feaad312"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</application>
+        <file_path/>
+        <instance_id>8a9f0ab61b75fd9052a243f4bd4bcb55</instance_id>
+        <instance_name>dev185211</instance_name>
+        <name>sys_properties_07603d3883df921045ad1cb6feaad312</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>If true, portal css would be in rem units</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>glide.service_portal.resize_text.https://.service-now.com/CreateNotes.enable_rem_conversion</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-22 06:09:31</sys_created_on><sys_id>07603d3883df921045ad1cb6feaad312</sys_id><sys_mod_count>1</sys_mod_count><sys_name>glide.service_portal.resize_text.https://.service-now.com/CreateNotes.enable_rem_conversion</sys_name><sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package><sys_policy/><sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope><sys_update_name>sys_properties_07603d3883df921045ad1cb6feaad312</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-22 06:12:18</sys_updated_on><type>boolean</type><value>true</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=07603d3883df921045ad1cb6feaad312"/></record_update>]]></payload>
+        <payload_hash>1716730142</payload_hash>
+        <record_name>glide.service_portal.resize_text.https://.service-now.com/CreateNotes.enable_rem_conversion</record_name>
+        <reverted_from/>
+        <source>d755a5f4839f921045ad1cb6feaad31e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 06:12:19</sys_created_on>
+        <sys_id>cc1139f883df921045ad1cb6feaad357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948ca3e6260000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 06:12:19</sys_updated_on>
+        <type>System Property</type>
+        <update_guid>c01139f850df9210205524ca89a43d57</update_guid>
+        <update_guid_history>c01139f850df9210205524ca89a43d57:1716730142,83603d385bdf92102dd226a03527fe15:-1026910924</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-22 06:13:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties">sys_properties</sys_db_object>
+        <sys_id>35f5c2c204d04488a4aa51e55f28ce64</sys_id>
+        <sys_metadata>07603d3883df921045ad1cb6feaad312</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>glide.service_portal.resize_text.https://.service-now.com/CreateNotes.enable_rem_conversion</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_scope_delete display_value="">64daa03572704d49a928bf08a985d6f9</sys_scope_delete>
+        <sys_update_name>sys_properties_07603d3883df921045ad1cb6feaad312</sys_update_name>
+        <sys_update_version display_value="sys_properties_07603d3883df921045ad1cb6feaad312">cc1139f883df921045ad1cb6feaad357</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-22 06:13:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
